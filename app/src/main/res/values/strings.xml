@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Questões</string>
+    <string name="txtNumeracao">1)</string>
+    <string name="txtEnunciado">Considerado os mais importantes críticos e percursores dos estudos sobre o fenômeno do capitalismo ocidental:</string>
+    <string name="Alternativa">A)</string>
+    <string name="AlternativaA">Marx e Engels</string>
+    <string name="AlternativaB">Hegel e Feurbach</string>
+    <string name="AlternativaC">Rousseau e Voltaire</string>
+    <string name="AlternativaD">John Lock e Thomas Hobbes</string>
+    <string name="AlternativaE">Heidegger e Arendt</string>
+    <string name="bntVoltar"><![CDATA[<<]]></string>
+    <string name="bntAvançar"><![CDATA[>>]]></string>
+    <string name="Quantidade">1/26</string>
+    <string name="TempoRestante">Tempo Restante:</string>
+</resources>

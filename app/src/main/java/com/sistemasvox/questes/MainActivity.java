@@ -16,6 +16,7 @@ import android.os.Handler;
 import com.sistemasvox.questes.bancoDeDados.DataBaseAcess;
 import com.sistemasvox.questes.model.domain.Alternativa;
 import com.sistemasvox.questes.model.domain.Questao;
+import com.sistemasvox.questes.utils.RandomicoVetorX;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -99,11 +100,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void construirQuestao() {
+
         DataBaseAcess dataBaseAcess = DataBaseAcess.getInstance(getApplicationContext());
         dataBaseAcess.open();
         String id_Q = String.valueOf(new Random().nextInt(Integer.parseInt(dataBaseAcess.getTotalQuestao())) + 1);
 
         Questao questao = dataBaseAcess.getQuestao(id_Q);
+
+        Toast.makeText(getApplicationContext(), new RandomicoVetorX(Integer.parseInt(dataBaseAcess.getTotalQuestao()), 16).gerarJogoAleatorio().toString(), Toast.LENGTH_LONG).show();
         Log.i("Errou", questao.toString());
 
 
